@@ -1,0 +1,10 @@
+<%= erb :'_errors' %>
+<h1>Login Below</h1>
+
+<form action="/sessions" method="POST">
+  <label>User Name:</label>
+  <input type="text" name="username">
+  <label>Password:</label>
+  <input type="password" name="password_string">
+  <input type="submit" value="Login">
+</form>
