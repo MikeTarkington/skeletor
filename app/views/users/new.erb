@@ -1,0 +1,12 @@
+<%= erb :'_errors' %>
+<h1>Register Below</h1>
+
+<form action="/users" method="POST">
+  <label>User Name:</label>
+  <input type="text" name="user[username]">
+  <label>User Name:</label>
+  <input type="text" name="email[email]">
+  <label>Password:</label>
+  <input type="password" name="password_string">
+  <input type="submit" value="Register">
+</form>

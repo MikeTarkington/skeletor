@@ -1,0 +1,14 @@
+<div id="navbar">
+<% if logged_in? %>
+  <ul>
+    <li class=“nav-bar”><a href='/logout'>Logout</a></li>
+    <li class=“nav-bar”><a href='/'>Home</a></li>
+  </ul>
+<% else %>
+  <ul>
+    <li class=“nav-bar”><a href='/users/new'>Register</a></li>
+    <li class=“nav-bar”><a href='/sessions'>Login</a></li>
+    <li class=“nav-bar”><a href='/'>Home</a></li>
+  </ul>
+<% end %>
+</div>
