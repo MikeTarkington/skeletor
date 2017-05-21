@@ -6,7 +6,7 @@ post '/sessions' do
   user = User.authenticate(params[:username], params[:password_string])
   if user
     login(user)
-    redirect "/questions"
+    redirect "/"
   else
     @errors = ['Incorrect login information']
     erb :'/sessions/new'
@@ -17,4 +17,3 @@ get '/logout' do
   logout
   redirect '/'
 end
-
