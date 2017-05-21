@@ -2,6 +2,8 @@
 
 A Sinatra app skeleton based on the [Frankly](https://github.com/kenrett/frankly) gem.
 
+![alt](https://www.shitpostbot.com/img/sourceimages/skeletor-57eb36456b537.png)
+
 Stuff added:
 - 'bcrypt' gem inclusion
 - sample migration for user class
