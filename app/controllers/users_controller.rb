@@ -1,3 +1,8 @@
+get '/' do
+  @users = User.all
+  erb :'skeletor'
+end
+
 get '/users/new' do
   erb :'users/new'
 end

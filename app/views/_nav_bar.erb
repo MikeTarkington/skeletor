@@ -1,14 +1,11 @@
-<div id="navbar">
+<h1 style="display:inline-block; margin-left:50px; margin-right:50px;">SKELTOR!</h1>
+<div id="navbar" style="display:inline-block;">
 <% if logged_in? %>
-  <ul>
-    <li class=“nav-bar”><a href='/logout'>Logout</a></li>
-    <li class=“nav-bar”><a href='/'>Home</a></li>
-  </ul>
+    <a style="margin: 10px 10px 10px 10px;" href='/logout'>Logout</a></li>
+    <a style="margin: 10px 10px 10px 10px;" href='/'>Home</a></li>
 <% else %>
-  <ul>
-    <li class=“nav-bar”><a href='/users/new'>Register</a></li>
-    <li class=“nav-bar”><a href='/sessions'>Login</a></li>
-    <li class=“nav-bar”><a href='/'>Home</a></li>
-  </ul>
+    <a style="margin: 10px 10px 10px 10px;" href='/users/new'>Register</a></li>
+    <a style="margin: 10px 10px 10px 10px;" href='/sessions'>Login</a></li>
+    <a style="margin: 10px 10px 10px 10px;" href='/'>Home</a></li>
 <% end %>
 </div>
