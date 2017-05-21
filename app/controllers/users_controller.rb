@@ -9,6 +9,7 @@ end
 
 post '/users' do
   user = User.new(params[:user])
+  user.email = params[:email]
   user.password = params[:password_string]
   if user.save
     login(user)
