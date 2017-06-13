@@ -22,3 +22,11 @@ post '/users' do
     end
   end
 end
+
+get '/users/:id' do
+  if logged_in?
+    @user = User.find(current_user.id)
+    # @user_stuff = @user.stuff
+    erb :'users/show'
+  end
+end
