@@ -1,0 +1,30 @@
+#nav-container {
+  background-color:rgb(217, 217, 217)
+}
+
+#nav-bar {
+  display:inline-block;
+  float:right;
+  margin: 25px 25px 0px 0px;
+}
+
+#nav-title{
+  display:inline-block;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+#nav-username {
+  display:inline-block;
+}
+
+.nav-link {
+  margin: 10px 10px 10px 10px;
+}
+
+#errors-partial {
+  color: red;
+  background-color: rgb(217, 217, 217);
+  margin: 10px 10px 10px 10px;
+  max-width: 500px;
+}

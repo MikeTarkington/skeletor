@@ -3,7 +3,7 @@ require 'bcrypt'
 class User < ActiveRecord::Base
   # associations
 
-  validates_presence_of :username, :email, :password_hash
+  validates_presence_of :username, :email
   validates_uniqueness_of :username, :email
 
   include BCrypt
@@ -19,11 +19,7 @@ class User < ActiveRecord::Base
 
   def self.authenticate(username, password)
     @user = User.find_by(username: username)
-    if @user && @user.password == password
-      @user
-    else
-      nil
-    end
+    @user && @user.password == password ? @user : nil
   end
 
 end

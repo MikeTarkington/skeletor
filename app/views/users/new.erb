@@ -3,13 +3,13 @@
 
 <form action="/users" method="POST">
   <label>User Name:</label>
-  <input type="text" name="user[username]">
+  <input type="text" name="user[username]" required>
   <br><br>
   <label>Email:</label>
-  <input type="text" name="user[email]">
+  <input type="email" name="user[email]" required>
   <br><br>
   <label>Password:</label>
-  <input type="password" name="user[password]">
+  <input type="password" name="user[password]" required>
   <br><br>
   <input type="submit" value="Register">
 </form>

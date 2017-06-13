@@ -1,15 +1,16 @@
-<div style="background-color:rgb(217, 217, 217)">
-  <h1 style="display:inline-block; margin-left:50px; margin-right:50px;">SKELTOR!</h1>
-  <div id="navbar" style="display:inline-block; float:right; margin: 25px 25px 0px 0px;">
+<div id="nav-container">
+  <h1 id="nav-title" >SKELETOR!</h1>
+  <div id="nav-bar">
   <% if logged_in? %>
       <% current_user = User.find_by(id: session[:id]) %>
-      <div style="display:inline-block;"><%= current_user.username %></div>
-      <a style="margin: 10px 10px 10px 10px;" href='/logout'>Logout</a></li>
-      <a style="margin: 10px 10px 10px 10px;" href='/'>Home</a></li>
+      <div id="nav-username" ><%= current_user.username %></div>
+      <a class="nav-link" href='/users/:id'>Profile</a></li>
+      <a class="nav-link" href='/logout'>Logout</a></li>
+      <a class="nav-link" href='/'>Home</a></li>
   <% else %>
-      <a style="margin: 10px 10px 10px 10px;" href='/users/new'>Register</a></li>
-      <a style="margin: 10px 10px 10px 10px;" href='/sessions'>Login</a></li>
-      <a style="margin: 10px 10px 10px 10px;" href='/'>Home</a></li>
+      <a class="nav-link" href='/users/new'>Register</a></li>
+      <a class="nav-link" href='/sessions'>Login</a></li>
+      <a class="nav-link" href='/'>Home</a></li>
   <% end %>
   </div>
 </div>
