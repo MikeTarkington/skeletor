@@ -1,0 +1,24 @@
+<!-- <form class="form-bits" action="/some/route" method="post"> -->
+  <label>Item Condition:</label>
+  <select name="auction[item_condition]">
+    <option value="poor">Poor</option>
+    <option value="fair">Fair</option>
+    <option value="good">Good</option>
+    <option value="new">New</option>
+  </select>
+  <br><br>
+  <label>Start Date:</label>
+  <input type="datetime-local" name="auction[start_date]">
+  <br><br>
+  <label>Start Date:</label>
+  <input type="datetime-local" name="auction[end_date]">
+  <br><br>
+  <label>Post: </label>
+  <br>
+  <textarea name="text" rows="8" cols="80" placeholder="enter description here"></textarea>
+  <br><br>
+  <label>Price: </label>
+  <input type="number" name="dollar-amount" min="1" step="any"><!-- may not work well decimal data type in db storage... need to test -->
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
